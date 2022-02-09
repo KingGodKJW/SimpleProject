@@ -3,3 +3,4 @@ spring:
     prefix : classpath:templates/
     suffix : .html
     mode : HTML5
+    cache : false
