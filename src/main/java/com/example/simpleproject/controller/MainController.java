@@ -5,11 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
 public class MainController {
 
-    @GetMapping
+    @GetMapping("/")
     public String indexPage() throws Exception{
         return "index";
+    }
+
+    @GetMapping("/main")
+    public String mainPage() throws Exception{
+        return "main";
     }
 }
